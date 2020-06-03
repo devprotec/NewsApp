@@ -1,8 +1,8 @@
 /*
 Author: David Brewu
-Date: 5th June, 2020
+Date: 3rd June, 2020
 
-This project satisfies all the requirments as specified in the mobile app development challenge 
+This project satisfies all the requirments as specified in the mobile development challenge 
 */ 
 
 
@@ -82,10 +82,9 @@ class _HomePageState extends State<HomePage>{
 
 // fetches and return the backend data from the web
   Future<List<News>> comingNews() async {
-    //var url = 'http://www.mocky.io/v2/5ecfddf13200006600e3d6d0';
-    //var url = 'http://www.mocky.io/v2/5ed3fc763400004d0001f57c';
-    var url = 'http://www.mocky.io/v2/5ed633c3340000560006d812';
-    var response = await http.get(url);                                // fetches the backend data from the specified url
+    var url = 'http://www.mocky.io/v2/5ecfddf13200006600e3d6d0';        // fetches the backend data from the specified url
+    
+    var response = await http.get(url);                                
     
     var news = List<News>();                                           // stores a list of news
     
@@ -345,9 +344,3 @@ class _HomePageState extends State<HomePage>{
     );
   }  
 }
-
-
- 
-
-
-
